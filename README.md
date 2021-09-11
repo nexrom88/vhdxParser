@@ -9,16 +9,19 @@ The following metadata blocks can be read and/or parsed:
 The following values can be retrieved:
 - VirtualDiskID, BlockSize, LogicalSectorSize, VirtualDiskSize
 
-To start using the code you just need to pass a readable System.IO.FileStream for a vhdx file to the class constructor.
-Then you can use the following methods:
-- getRawBatTable
-- getRawHeader
-- getRawLog
-- getBlockSize
-- getVirtualDiskID
-- getLogicalSectorSize
-- getVirtualDiskSize
-- getRawMetadataTable
-- parseMetadataTable
-- parseBATTable
-- parseRegionTable
+To start using the code you just need to pass a string with the vhdx path to the class constructor.
+
+Then you call:
+<code>vhdxParser.parse();</code>
+to retrieve an object with the parsed data
+
+The following metadata entries are getting parsed:
+- BatTable
+- Header
+- Log (no parsing atm, just raw bytes) 
+- BlockSize
+- VirtualDiskID
+- LogicalSectorSize
+- VirtualDiskSize
+- MetadataTable
+- RegionTable
