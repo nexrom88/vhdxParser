@@ -1,5 +1,5 @@
 # vhdxParser
-A parser for the vhdx meta data
+A parser for the vhdx meta data.
 This is a C# class to get and parse vhdx meta data. The vhdx file specifications can be seen here:
 https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-vhdx/83e061f8-f6e2-4de1-91bd-5d518a43d477
 
